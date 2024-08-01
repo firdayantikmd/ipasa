@@ -183,18 +183,22 @@ body {
   gap: 2rem;
 }
 
+.content-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0 0; /* Add padding for better spacing on small screens */
+}
+
 .content-card {
   background-color: #FFFFFF;
   color: #000000;
   border-radius: 12px;
   padding: 2rem;
   transition: transform 0.3s;
-}
-
-.content-card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  width: 100%; /* Ensure cards take the full width available */
 }
 
 .icon {
@@ -455,6 +459,19 @@ body {
 
   .content-card {
     padding: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .content-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .content-card h4 {
+    font-size: 1rem;
+  }
+
+  .content-card p {
+    font-size: 0.875rem;
   }
 
   .faq-content {
@@ -551,12 +568,26 @@ body {
     font-size: 0.75rem;
   }
 
+  .content-card-container {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .content-card {
+    padding: 0.25rem;
+    font-size: 0.625rem;
+  }
+
   .content-card h3 {
-    font-size: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .content-card h4 {
+    font-size: 0.75rem;
   }
 
   .content-card p {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
   }
 
   .faq h2 {
