@@ -570,11 +570,11 @@ body {
 
   .content-card-container {
     grid-template-columns: 1fr;
-    gap: 0.5rem;
+    gap: 2rem;
   }
 
   .content-card {
-    padding: 0.25rem;
+    padding: 1rem;
     font-size: 0.625rem;
   }
 
