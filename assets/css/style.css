@@ -461,6 +461,10 @@ body {
     grid-template-columns: 1fr;
   }
   
+  .footer-logo {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -510,5 +514,10 @@ body {
 
   .footer-contact p {
     font-size: 0.875rem;
+  }
+  .footer-logo {
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.5rem;
   }
 }
