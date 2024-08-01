@@ -356,7 +356,7 @@ body {
 }
 
 .footer-contact p {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 1rem 0;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -376,6 +376,33 @@ body {
   padding: 2rem 2rem 0 2rem;
 }
 
-.footer-contact h3 {
-  margin-bottom: 2rem;
+.footer-contact h4 {
+  margin-bottom: 1.3rem;
+}
+
+.office-hour {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Adjust the gap as needed */
+}
+
+.office-hour p {
+  display: flex;
+}
+
+.office-hour p span:first-child {
+  min-width: 150px; /* Adjust the width as needed */
+  text-align: left;
+}
+
+.office-hour p span:last-child {
+  text-align: left;
+}
+
+.contact-us {
+  margin-top: 1.5rem;
+}
+
+.contact-us p {
+  margin-bottom: 1.3rem;
 }
