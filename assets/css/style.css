@@ -230,6 +230,7 @@ body {
   display: flex;
   width: 100vw;
   overflow: hidden;
+  flex-wrap: wrap; /* Add this to allow wrapping */
 }
 
 .gallery img {
@@ -320,26 +321,28 @@ body {
 }
 
 .footer {
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
   color: #FFFFFF;
   background-color: #161515;
 }
 
 .footer-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 90rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .footer-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
 .footer-logo {
@@ -405,4 +408,107 @@ body {
 
 .contact-us p {
   margin-bottom: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-images {
+    flex-direction: column;
+  }
+
+  .hero-image-flex {
+    width: 100%;
+  }
+
+  .learn-more-button {
+    width: 100%;
+  }
+
+  .about-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+  }
+
+  .gallery {
+    flex-direction: row; /* Ensure row direction */
+  }
+
+  .gallery img {
+    max-width: 100%; /* Adjust the width for smaller screens */
+    flex: 0 0 50%; /* Ensure two images per row */
+  }
+
+  .content-card {
+    padding: 1rem;
+  }
+
+  .faq-content {
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.875rem;
+  }
+
+  .learn-more-button span {
+    font-size: 0.875rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-container p {
+    font-size: 0.875rem;
+  }
+
+  .content-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .content-card p {
+    font-size: 0.875rem;
+  }
+
+  .gallery img {
+    flex: 0 0 100%; /* Ensure one image per row on very small screens */
+  }
+
+  .faq h2 {
+    font-size: 1.5rem;
+  }
+
+  .faq p {
+    font-size: 0.875rem;
+  }
+
+  .footer-contact h4 {
+    font-size: 1rem;
+  }
+
+  .footer-contact p {
+    font-size: 0.875rem;
+  }
 }
