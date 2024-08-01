@@ -521,3 +521,62 @@ body {
     margin-left: 2.5rem;
   }
 }
+
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 1.25rem;
+  }
+
+  .hero-content p {
+    font-size: 0.75rem;
+  }
+
+  .learn-more-button span {
+    font-size: 0.75rem;
+  }
+
+  .hero-images img {
+    max-width: 100%; /* Ensure images fit within the viewport */
+  }
+
+  .hero-image-flex {
+    width: 100%;
+  }
+
+  .about-container h2 {
+    font-size: 1rem;
+  }
+
+  .about-container p {
+    font-size: 0.75rem;
+  }
+
+  .content-card h3 {
+    font-size: 1rem;
+  }
+
+  .content-card p {
+    font-size: 0.75rem;
+  }
+
+  .faq h2 {
+    font-size: 1.25rem;
+  }
+
+  .faq p {
+    font-size: 0.75rem;
+  }
+
+  .footer-contact h4 {
+    font-size: 0.875rem;
+  }
+
+  .footer-contact p {
+    font-size: 0.75rem;
+  }
+
+  .footer-bottom p {
+    font-size: 10px;
+    padding: 0.5rem;
+  }
+}
