@@ -478,6 +478,14 @@ body {
   .faq-content {
     grid-template-columns: 1fr;
   }
+
+  .faq-question span {
+    font-size: 20px;
+  }
+
+  .faq-answer {
+    font-size: 16px;
+  }
   
   .footer-logo {
     align-items: center;
@@ -487,7 +495,7 @@ body {
 
 @media (max-width: 480px) {
   .hero-content h1 {
-    font-size: 1.5rem;
+    font-size: 32px;
   }
 
   .hero-content p {
@@ -499,7 +507,7 @@ body {
   }
 
   .about-container h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .about-container p {
@@ -507,7 +515,7 @@ body {
   }
 
   .content-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .content-card p {
@@ -526,6 +534,14 @@ body {
     font-size: 0.875rem;
   }
 
+  .faq-question span {
+    font-size: 0.875rem;
+  }
+
+  .faq-answer {
+    font-size: 0.875rem;
+  }
+
   .footer-contact h4 {
     font-size: 1rem;
   }
@@ -533,6 +549,7 @@ body {
   .footer-contact p {
     font-size: 0.875rem;
   }
+
   .footer-logo {
     align-items: center;
     justify-content: center;
@@ -542,7 +559,7 @@ body {
 
 @media (max-width: 360px) {
   .hero-content h1 {
-    font-size: 1.25rem;
+    font-size: 32px;
   }
 
   .hero-content p {
@@ -597,6 +614,14 @@ body {
 
   .faq p {
     font-size: 0.75rem;
+  }
+
+  .faq-question span {
+    font-size: 0.875rem;
+  }
+
+  .faq-answer {
+    font-size: 0.875rem;
   }
 
   .footer-contact h4 {
