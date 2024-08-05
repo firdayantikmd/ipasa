@@ -52,8 +52,7 @@ body {
 
 .logo img {
   width: 100%;
-  max-width: 180px;
-  margin-right: 3.5rem;
+  max-width: 120px;
 }
 
 .hero {
@@ -332,7 +331,9 @@ body {
 
 .footer-content {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  gap: 2rem;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 90rem;
@@ -343,11 +344,14 @@ body {
 }
 
 .footer-left {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  align-items: flex-start;
   margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
 .footer-logo {
@@ -355,15 +359,29 @@ body {
   margin-bottom: 10px;
 }
 
-.footer-contact {
+.footer-left h4 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.footer-left p {
+  font-family: 'SF Pro Display Regular';
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.footer-right {
   display: flex;
   flex-direction: column;
   color: #FFFFFF;
   font-family: 'SF Pro Display Regular';
-  font-size: 18px;  
+  font-size: 18px;
+  flex-grow: 1; /* Ensure it takes available space */
 }
 
-.footer-contact p {
+.footer-right p {
   margin: 0.5rem 0 1rem 0;
   display: flex;
   align-items: center;
@@ -487,9 +505,20 @@ body {
     font-size: 16px;
   }
   
-  .footer-logo {
+  .footer-content {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+  }
+
+  .footer-left,
+  .footer-left {
+    width: 100%;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer-left {
+    gap: 2rem;
   }
 }
 
@@ -553,7 +582,6 @@ body {
   .footer-logo {
     align-items: center;
     justify-content: center;
-    margin-left: 2.5rem;
   }
 }
 
